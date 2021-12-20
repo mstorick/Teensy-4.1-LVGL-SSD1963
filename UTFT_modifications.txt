@@ -6,6 +6,17 @@
 -----------------HW_ARM_defines.h----------------
 #if defined(TEENSYDUINO) && TEENSYDUINO >= 117 && !defined(__IMXRT1062__)
 
+------------------ changes in tft_drivers/ssd1963/800alt/initlcd.h ------------------
+(put in all the delays)
+case SSD1963_800ALT:
+ LCD_Write_COM(0xE2);		//PLL multiplier, set PLL clock to 120M
+ delay(1);
+ LCD_Write_DATA(0x23);	    //N=0x36 for 6.5M, 0x23 for 10M crystal
+ delay(1);
+ LCD_Write_DATA(0x02);
+ delay(1);
+ LCD_Write_DATA(0x04);
+ delay(1);
 
 ------------------HW_Teensy4.h-------------------
 the whole thing
