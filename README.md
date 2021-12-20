@@ -13,7 +13,11 @@ If you have a touchscreen on your display, you will need to calibrate it yoursel
 Hopefully this can help some people get on their feet with setting up a teensy 4.1 LVGL project.  It took me a while to figure out myself.
 
 If you encounter any issues be sure your frameworks are the same version as mine:
+
 Platformio Core version = 5.2.4
+
 Teensyduino version = 1.55
+
 Arduino version = 1.8.5
+
 LVGL version = 8.0.1
