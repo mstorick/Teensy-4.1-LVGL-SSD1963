@@ -1,0 +1,34 @@
+------------------ changes in tft_drivers/ssd1963/800alt/initlcd.h ------------------
+// LCD_Write_COM(0x36);		//rotation
+// LCD_Write_DATA(0x22);		// -- Set to 0x21 to rotate 180 degrees
+LCD_Write_COM(0x36); // Set Address Mode
+LCD_Write_DATA(0b01000010); //old = 0b00100010
+------------------ changes in XPT2046_Touchscreen.cpp ------------------
+#define Z_THRESHOLD     600
+
+  case 1:
+	// xraw = x;
+	// yraw = y;
+	xraw = y;
+	yraw = x;
+------------------ changes in XPT2046_Touchscreen.h ------------------
+#if defined(__IMXRT1062__)
+#if __has_include(<FlexIOSPI.h>)
+	#include <FlexIOSPI.h>
+#endif
+#endif
+------------------ changes in tft_drivers/ssd1963/800alt/initlcd.h ------------------
+(put in all the delays)
+case SSD1963_800ALT:
+ LCD_Write_COM(0xE2);		//PLL multiplier, set PLL clock to 120M
+ delay(1);
+ LCD_Write_DATA(0x23);	    //N=0x36 for 6.5M, 0x23 for 10M crystal
+ delay(1);
+ LCD_Write_DATA(0x02);
+ delay(1);
+ LCD_Write_DATA(0x04);
+ delay(1);
+------------------ changes in lv_conf.h -------------------------------
+#if 1
+
+#define LV_TICK_CUSTOM     1
