@@ -1,4 +1,3 @@
-#include <Arduino.h>
 #include <UTFT.h>
 
 UTFT myGLCD(SSD1963_800ALT, 3, 4, 5, 6);
