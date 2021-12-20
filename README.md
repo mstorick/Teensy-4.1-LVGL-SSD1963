@@ -17,3 +17,5 @@ If you encounter any issues be sure your frameworks are the same version as mine
  - Teensyduino version = 1.55
  - Arduino version = 1.8.5
  - LVGL version = 8.0.1
+
+If you have any questions or suggestions feel free to leave an issue or a pull request.
