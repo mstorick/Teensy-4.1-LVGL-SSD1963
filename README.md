@@ -18,4 +18,42 @@ If you encounter any issues be sure your frameworks are the same version as mine
  - Arduino version = 1.8.5
  - LVGL version = 8.0.1
 
+## Using only UTFT
+If you would like to only use UTFT, don't need any of the platformio installation steps.  Simply make sure teensyduino is installed, change the three UTFT library files (should be installed with teensyduino) mentioned in UTFT_modifications.txt, and run the arduino sketch UTFT_test.ino.
+
+## Pinout
+| Teensy 4.1 pin | SSD1963 Display pin | XPT2046 | External 5v supply |
+|----------------|---------------------|---------|--------------------|
+| 24             | DB0                 |         |                    |
+| 25             | DB1                 |         |                    |
+| 26             | DB2                 |         |                    |
+| 27             | DB3                 |         |                    |
+| 17             | DB4                 |         |                    |
+| 16             | DB5                 |         |                    |
+| 22             | DB6                 |         |                    |
+| 23             | DB7                 |         |                    |
+| 20             | DB8                 |         |                    |
+| 21             | DB9                 |         |                    |
+| 1              | DB10                |         |                    |
+| 0              | DB11                |         |                    |
+| 19             | DB12                |         |                    |
+| 18             | DB13                |         |                    |
+| 14             | DB14                |         |                    |
+| 15             | DB15                |         |                    |
+| 3.3v           | 3.3v                |         |                    |
+| GND            | GND                 |         |                    |
+| 3              | RS                  |         |                    |
+| 4              | WR                  |         |                    |
+| 22             | CS                  |         |                    |
+| 23             | REST/Reset          |         |                    |
+| 3.3v           | RD                  |         |                    |
+|                | 5v                  |         | +5v                |
+|                | LED_A               |         | +5v                |
+| 10             |                     | T_CS    |                    |
+| 13             |                     | T_CLK   |                    |
+| 11             |                     | T_DIN   |                    |
+| 12             |                     | T_DO    |                    |
+| 9              |                     | T_IRQ   |                    |
+
+## Suggestions/Questions
 If you have any questions or suggestions feel free to leave an issue or a pull request.
