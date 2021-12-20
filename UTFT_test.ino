@@ -1,6 +1,6 @@
 #include <UTFT.h>
 
-UTFT myGLCD(SSD1963_800ALT, 3, 4, 5, 6);
+UTFT myGLCD(SSD1963_800ALT, 3, 4, 22, 23);
 
 void setup() {
   delay(500);
