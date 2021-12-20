@@ -1,0 +1,11 @@
+------------------UTFT.cpp-----------------------
+	#elif defined(__IMXRT1062__)
+		#pragma message("Compiling for Teensy 4.x")
+		#include "hardware/arm/HW_Teensy4.h"
+
+-----------------HW_ARM_defines.h----------------
+#if defined(TEENSYDUINO) && TEENSYDUINO >= 117 && !defined(__IMXRT1062__)
+
+
+------------------HW_Teensy4.h-------------------
+the whole thing
