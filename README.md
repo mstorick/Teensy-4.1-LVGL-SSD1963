@@ -44,8 +44,8 @@ If you would like to only use UTFT, don't need any of the platformio installatio
 | GND            | GND                 |         |                    |
 | 3              | RS                  |         |                    |
 | 4              | WR                  |         |                    |
-| 22             | CS                  |         |                    |
-| 23             | REST/Reset          |         |                    |
+| 5             | CS                  |         |                    |
+| 6             | REST/Reset          |         |                    |
 | 3.3v           | RD                  |         |                    |
 |                | 5v                  |         | +5v                |
 |                | LED_A               |         | +5v                |
