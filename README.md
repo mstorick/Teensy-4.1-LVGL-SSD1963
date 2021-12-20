@@ -49,7 +49,7 @@ If you would like to only use UTFT, don't need any of the platformio installatio
 | 3.3v           | RD                  |         |                    |
 |                | 5v                  |         | +5v                |
 |                | LED_A               |         | +5v                |
-| 10             |                     | T_CS    |                    |
+| 10             |                     | T_CS (slave select)   |                    |
 | 13             |                     | T_CLK   |                    |
 | 11             |                     | T_DIN   |                    |
 | 12             |                     | T_DO    |                    |
